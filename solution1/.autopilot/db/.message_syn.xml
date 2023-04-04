@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;cnn_4_forward_pass/forward_pass.cpp&apos; ..."/>
+	<Message severity="WARNING" prefix="[HLS 200-40]" key="HLS_40_1378" tag="" content="In file included from cnn_4_forward_pass/forward_pass.cpp:1:
+In file included from cnn_4_forward_pass/forward_pass.cpp:1:
+In file included from cnn_4_forward_pass/forward_pass.hpp:9:
+cnn_4_forward_pass/FFT.hpp:54:9: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+ return {real, imag};
+        ^~~~~~~~~~~~
+1 warning generated."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;cnn_4_forward_pass/FFT.cpp&apos; ..."/>
+	<Message severity="ERROR" prefix="[HLS 200-70]" key="HLS_70_1454" tag="" content="Compilation errors found: In file included from cnn_4_forward_pass/FFT.cpp:1:
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.hpp:54:9: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+ return {real, imag};
+        ^~~~~~~~~~~~
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:46:2: error: no matching function for call to &apos;transpose2d&apos;
+ transpose2d(real_x, real_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:47:2: error: no matching function for call to &apos;transpose2d&apos;
+ transpose2d(imag_x, imag_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:53:2: error: no matching function for call to &apos;transpose2d&apos;
+ transpose2d(real_y, real_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:54:2: error: no matching function for call to &apos;transpose2d&apos;
+ transpose2d(imag_y, imag_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:70:2: error: no matching function for call to &apos;transpose2d&apos;
+ transpose2d(real_x, real_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:71:2: error: no matching function for call to &apos;transpose2d&apos;
+ transpose2d(imag_x, imag_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:77:2: error: no matching function for call to &apos;transpose2d&apos;
+ transpose2d(real_y, real_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:78:2: error: no matching function for call to &apos;transpose2d&apos;
+ transpose2d(imag_y, imag_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+1 warning and 8 errors generated."/>
+</Messages>

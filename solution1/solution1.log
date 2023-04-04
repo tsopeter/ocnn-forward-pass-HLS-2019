@@ -1,0 +1,301 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynquplusRFSOC/zynquplusRFSOC.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/zynquplusRFSOC/zynquplusRFSOC'.
+INFO: [HLS 200-10] Setting target device to 'xczu28dr-ffvg1517-2-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cnn_4_forward_pass/forward_pass.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from cnn_4_forward_pass/forward_pass.cpp:1:
+cnn_4_forward_pass/forward_pass.cpp:9:7: error: no member named 'function' in namespace 'std'
+ std::function<float(float, float)> sigmoid = [](float x, float m)->float {
+ ~~~~~^
+cnn_4_forward_pass/forward_pass.cpp:9:27: error: expected '(' for function-style cast or type construction
+ std::function<float(float, float)> sigmoid = [](float x, float m)->float {
+                     ~~~~~^
+cnn_4_forward_pass/forward_pass.cpp:9:37: error: use of undeclared identifier 'sigmoid'
+ std::function<float(float, float)> sigmoid = [](float x, float m)->float {
+                                    ^
+cnn_4_forward_pass/forward_pass.cpp:9:47: error: expected expression
+ std::function<float(float, float)> sigmoid = [](float x, float m)->float {
+                                              ^
+cnn_4_forward_pass/forward_pass.cpp:20:21: error: use of undeclared identifier 'sigmoid'
+   real_fp1[i][j] = sigmoid(real_fp1[i][j], 2*10e3);
+                    ^
+5 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynquplusRFSOC/zynquplusRFSOC.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/zynquplusRFSOC/zynquplusRFSOC'.
+INFO: [HLS 200-10] Setting target device to 'xczu28dr-ffvg1517-2-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cnn_4_forward_pass/forward_pass.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'cnn_4_forward_pass/FFT.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:99:15: warning: alias declarations are a C++11 extension [-Wc++11-extensions]
+ using cplx = std::pair<float, float>;
+              ^
+cnn_4_forward_pass/FFT.cpp:101:7: error: no member named 'function' in namespace 'std'
+ std::function<cplx(int, float, float, float)> wk = [&pi](int size, float n, float k, float c)->cplx{
+ ~~~~~^
+cnn_4_forward_pass/FFT.cpp:101:24: error: expected '(' for function-style cast or type construction
+ std::function<cplx(int, float, float, float)> wk = [&pi](int size, float n, float k, float c)->cplx{
+                    ~~~^
+cnn_4_forward_pass/FFT.cpp:101:48: error: use of undeclared identifier 'wk'
+ std::function<cplx(int, float, float, float)> wk = [&pi](int size, float n, float k, float c)->cplx{
+                                               ^
+cnn_4_forward_pass/FFT.cpp:101:53: error: expected expression
+ std::function<cplx(int, float, float, float)> wk = [&pi](int size, float n, float k, float c)->cplx{
+                                                    ^
+cnn_4_forward_pass/FFT.cpp:111:13: error: use of undeclared identifier 'wk'
+   cplx a = wk(512, n, k, -1.0);
+            ^
+cnn_4_forward_pass/FFT.cpp:112:13: error: use of undeclared identifier 'wk'
+   cplx b = wk(512, n, k, 1.0);
+            ^
+1 warning and 6 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynquplusRFSOC/zynquplusRFSOC.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/zynquplusRFSOC/zynquplusRFSOC'.
+INFO: [HLS 200-10] Setting target device to 'xczu28dr-ffvg1517-2-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cnn_4_forward_pass/forward_pass.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from cnn_4_forward_pass/forward_pass.cpp:1:
+In file included from cnn_4_forward_pass/forward_pass.cpp:1:
+In file included from cnn_4_forward_pass/forward_pass.hpp:9:
+cnn_4_forward_pass/FFT.hpp:49:14: error: expected '(' for function-style cast or type construction
+ return cmplx{real, imag};
+        ~~~~~^
+1 error generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynquplusRFSOC/zynquplusRFSOC.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/zynquplusRFSOC/zynquplusRFSOC'.
+INFO: [HLS 200-10] Setting target device to 'xczu28dr-ffvg1517-2-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cnn_4_forward_pass/forward_pass.cpp' ... 
+WARNING: [HLS 200-40] In file included from cnn_4_forward_pass/forward_pass.cpp:1:
+In file included from cnn_4_forward_pass/forward_pass.cpp:1:
+In file included from cnn_4_forward_pass/forward_pass.hpp:9:
+cnn_4_forward_pass/FFT.hpp:49:9: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+ return {real, imag};
+        ^~~~~~~~~~~~
+1 warning generated.
+INFO: [HLS 200-10] Analyzing design file 'cnn_4_forward_pass/FFT.cpp' ... 
+WARNING: [HLS 200-40] In file included from cnn_4_forward_pass/FFT.cpp:1:
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.hpp:49:9: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+ return {real, imag};
+        ^~~~~~~~~~~~
+1 warning generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynquplusRFSOC/zynquplusRFSOC.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/zynquplusRFSOC/zynquplusRFSOC'.
+INFO: [HLS 200-10] Setting target device to 'xczu28dr-ffvg1517-2-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cnn_4_forward_pass/forward_pass.cpp' ... 
+WARNING: [HLS 200-40] In file included from cnn_4_forward_pass/forward_pass.cpp:1:
+In file included from cnn_4_forward_pass/forward_pass.cpp:1:
+In file included from cnn_4_forward_pass/forward_pass.hpp:9:
+cnn_4_forward_pass/FFT.hpp:49:9: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+ return {real, imag};
+        ^~~~~~~~~~~~
+1 warning generated.
+INFO: [HLS 200-10] Analyzing design file 'cnn_4_forward_pass/FFT.cpp' ... 
+WARNING: [HLS 200-40] In file included from cnn_4_forward_pass/FFT.cpp:1:
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.hpp:49:9: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+ return {real, imag};
+        ^~~~~~~~~~~~
+1 warning generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynquplusRFSOC/zynquplusRFSOC.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/zynquplusRFSOC/zynquplusRFSOC'.
+INFO: [HLS 200-10] Setting target device to 'xczu28dr-ffvg1517-2-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cnn_4_forward_pass/forward_pass.cpp' ... 
+WARNING: [HLS 200-40] In file included from cnn_4_forward_pass/forward_pass.cpp:1:
+In file included from cnn_4_forward_pass/forward_pass.cpp:1:
+In file included from cnn_4_forward_pass/forward_pass.hpp:9:
+cnn_4_forward_pass/FFT.hpp:54:9: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+ return {real, imag};
+        ^~~~~~~~~~~~
+1 warning generated.
+INFO: [HLS 200-10] Analyzing design file 'cnn_4_forward_pass/FFT.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from cnn_4_forward_pass/FFT.cpp:1:
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.hpp:54:9: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+ return {real, imag};
+        ^~~~~~~~~~~~
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:46:2: error: no matching function for call to 'transpose2d'
+ transpose2d(real_x, real_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:47:2: error: no matching function for call to 'transpose2d'
+ transpose2d(imag_x, imag_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:53:2: error: no matching function for call to 'transpose2d'
+ transpose2d(real_y, real_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:54:2: error: no matching function for call to 'transpose2d'
+ transpose2d(imag_y, imag_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:70:2: error: no matching function for call to 'transpose2d'
+ transpose2d(real_x, real_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:71:2: error: no matching function for call to 'transpose2d'
+ transpose2d(imag_x, imag_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:77:2: error: no matching function for call to 'transpose2d'
+ transpose2d(real_y, real_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:78:2: error: no matching function for call to 'transpose2d'
+ transpose2d(imag_y, imag_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:113:2: error: no matching function for call to 'implt_fftshift'
+ implt_fftshift(real_x);
+ ^~~~~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:40:6: note: candidate function not viable: requires 2 arguments, but 1 was provided
+void implt_fftshift(float x[512][512],
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:114:2: error: no matching function for call to 'implt_fftshift'
+ implt_fftshift(imag_x);
+ ^~~~~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:40:6: note: candidate function not viable: requires 2 arguments, but 1 was provided
+void implt_fftshift(float x[512][512],
+     ^
+1 warning and 10 errors generated.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vivado/2019.1/common/technology/xilinx/zynquplusRFSOC/zynquplusRFSOC.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/zynquplusRFSOC/zynquplusRFSOC'.
+INFO: [HLS 200-10] Setting target device to 'xczu28dr-ffvg1517-2-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cnn_4_forward_pass/forward_pass.cpp' ... 
+WARNING: [HLS 200-40] In file included from cnn_4_forward_pass/forward_pass.cpp:1:
+In file included from cnn_4_forward_pass/forward_pass.cpp:1:
+In file included from cnn_4_forward_pass/forward_pass.hpp:9:
+cnn_4_forward_pass/FFT.hpp:54:9: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+ return {real, imag};
+        ^~~~~~~~~~~~
+1 warning generated.
+INFO: [HLS 200-10] Analyzing design file 'cnn_4_forward_pass/FFT.cpp' ... 
+ERROR: [HLS 200-70] Compilation errors found: In file included from cnn_4_forward_pass/FFT.cpp:1:
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.hpp:54:9: warning: generalized initializer lists are a C++11 extension [-Wc++11-extensions]
+ return {real, imag};
+        ^~~~~~~~~~~~
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:46:2: error: no matching function for call to 'transpose2d'
+ transpose2d(real_x, real_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:47:2: error: no matching function for call to 'transpose2d'
+ transpose2d(imag_x, imag_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:53:2: error: no matching function for call to 'transpose2d'
+ transpose2d(real_y, real_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:54:2: error: no matching function for call to 'transpose2d'
+ transpose2d(imag_y, imag_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:70:2: error: no matching function for call to 'transpose2d'
+ transpose2d(real_x, real_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:71:2: error: no matching function for call to 'transpose2d'
+ transpose2d(imag_x, imag_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:77:2: error: no matching function for call to 'transpose2d'
+ transpose2d(real_y, real_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+In file included from cnn_4_forward_pass/FFT.cpp:1:
+cnn_4_forward_pass/FFT.cpp:78:2: error: no matching function for call to 'transpose2d'
+ transpose2d(imag_y, imag_t1);
+ ^~~~~~~~~~~
+cnn_4_forward_pass/FFT.hpp:43:6: note: candidate function not viable: requires 1 argument, but 2 were provided
+void transpose2d (float x[512][512]);
+     ^
+1 warning and 8 errors generated.
